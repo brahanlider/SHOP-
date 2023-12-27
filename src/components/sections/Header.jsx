@@ -4,6 +4,8 @@ import {
   NavLink,
 } from "react-router-dom"; /* Link para que no actualize la pag */
 import logoSHOP from "../../assets/img/logo-shop.webp";
+import { BsList, BsXCircle } from "react-icons/bs";
+
 const Header = () => {
   //
   const header = useRef();
@@ -84,19 +86,19 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className="icon icon--close" onClick={hideMenu}>
-                  ❌
+                  <BsXCircle />
                 </li>
               </ul>
             </div>
             <div className="f-elements f-elements--center">
-              <select>
+              {/* <select>
                 <option value="value1">🌑</option>
                 <option value="value2">🌞</option>
                 <option value="value3">💻</option>
-              </select>
+              </select> */}
               {/* showMenu = ejecutar la referencia */}
               <button className="icon" onClick={showMenu}>
-                🍔
+                <BsList />
               </button>
             </div>
           </div>
