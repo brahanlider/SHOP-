@@ -1,0 +1,14 @@
+[33mecde850[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m)[m styles _icons.scss
+[33m75278a7[m[33m ([m[1;31morigin/develop[m[33m)[m update styles _list.scss
+[33m0e3617b[m styles _modals.scss
+[33m41595fa[m _nav.scss
+[33md843398[m fe.scss _header.scss
+[33m98552ab[m install sass
+[33ma2cc906[m update Header.jsx
+[33m5ad99a1[m  routes and layout Outlet
+[33m24ecd2e[m create indexRoute.jsx
+[33m4e815d2[m install react router doom
+[33m900ac37[m loaded.html css
+[33m978d4e7[m variables css
+[33m2077d0f[m @media dark-light
+[33mb35e092[m[33m ([m[1;33mtag: 0.0.1[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m Inicio de proyecto
