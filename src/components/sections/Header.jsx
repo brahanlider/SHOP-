@@ -1,9 +1,25 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom"; /* Link para que no actualize la pag */
 import logoSHOP from "../../assets/img/logo-shop.webp";
 const Header = () => {
+  //
+  const header = useRef();
+  const modal = useRef();
+
+  //
+  const showMenu = () => {
+    header.current.classList.add("header--move");
+    modal.current.classList.add("modal--show");
+  };
+
+  const hideMenu = () => {
+    header.current.classList.remove("header--move");
+    modal.current.classList.remove("modal--show");
+  };
+
   return (
     <>
-      <header className="header">
+      <header className="header" ref={header}>
         <nav className="nav">
           <div className="container f-elements f-elements--header">
             <Link to="/">
@@ -15,7 +31,7 @@ const Header = () => {
                 height="32"
               />
             </Link>
-            <div className="modal modal--header">
+            <div className="modal modal--header" ref={modal} onClick={hideMenu}>
               <ul className="list list--header">
                 <li>
                   <Link to="/productos" className="list__link">
@@ -37,6 +53,7 @@ const Header = () => {
                     Contacto
                   </Link>
                 </li>
+                <li className="icon icon--close">❌</li>
               </ul>
             </div>
             <div className="f-elements f-elements--center">
@@ -45,7 +62,10 @@ const Header = () => {
                 <option value="value2">🌞</option>
                 <option value="value3">💻</option>
               </select>
-              <button className="icon">🍔</button>
+              {/* showMenu = ejecutar la referencia */}
+              <button className="icon" onClick={showMenu}>
+                🍔
+              </button>
             </div>
           </div>
         </nav>

@@ -24,13 +24,13 @@
 
   &__link {
     position: relative;
-    color: var(--light-text-color);
+    color: var(--primary-text-color);
     font-weight: 600;
     text-decoration: none;
     transition: color 0.25s;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: -0.125rem;

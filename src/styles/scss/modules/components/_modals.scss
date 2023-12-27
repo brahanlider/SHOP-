@@ -13,7 +13,7 @@
   --translate-modal: 100%;
   transition: opacity 0.25s;
 
-  &-show {
+  &--show {
     opacity: 1;
     pointer-events: auto;
     --translate-modal: 0;
