@@ -1,13 +1,12 @@
 import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import Header from "./components/sections/Header";
-import { indexRoute } from "./routes/indexRoute";
+import { primaryRoute } from "./routes/primaryRoute";
 
 function App() {
   return (
     <>
-      <Header />
-      <RouterProvider router={indexRoute} />
+      {/* maneja las diferentes secciones sin problema */}
+      <RouterProvider router={primaryRoute} />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoSHOP from "../../assets/img/logo-shop.webp";
 const Header = () => {
   return (
@@ -5,7 +6,8 @@ const Header = () => {
       <header className="header">
         <nav className="nav">
           <div className="container f-elements f-elements--header">
-            <a>
+            {/* Link para que no actualize la pag */}
+            <Link to="/">
               <img
                 src={logoSHOP}
                 alt="Logo de shop"
@@ -13,20 +15,28 @@ const Header = () => {
                 width="32"
                 height="32"
               />
-            </a>
+            </Link>
             <div className="modal modal--header">
               <ul className="list list--header">
                 <li>
-                  <a className="list__link">Productos</a>
+                  <Link to="/productos" className="list__link">
+                    Productos
+                  </Link>
                 </li>
                 <li>
-                  <a className="list__link">Nosotros</a>
+                  <Link to="/nosotros" className="list__link">
+                    Nosotros
+                  </Link>
                 </li>
                 <li>
-                  <a className="list__link">Historias</a>
+                  <Link to="/historias" className="list__link">
+                    Historias
+                  </Link>
                 </li>
                 <li>
-                  <a className="list__link">Contacto</a>
+                  <Link to="/contacto" className="list__link">
+                    Contacto
+                  </Link>
                 </li>
               </ul>
             </div>
