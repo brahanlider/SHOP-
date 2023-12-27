@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; /* Link para que no actualize la pag */
 import logoSHOP from "../../assets/img/logo-shop.webp";
 const Header = () => {
   return (
@@ -6,7 +6,6 @@ const Header = () => {
       <header className="header">
         <nav className="nav">
           <div className="container f-elements f-elements--header">
-            {/* Link para que no actualize la pag */}
             <Link to="/">
               <img
                 src={logoSHOP}
@@ -39,14 +38,14 @@ const Header = () => {
                   </Link>
                 </li>
               </ul>
-              <div className="f-elements f-elements--center">
-                <select>
-                  <option value="value1">🌑</option>
-                  <option value="value2">🌞</option>
-                  <option value="value3">💻</option>
-                </select>
-                <button className="icon">🍔</button>
-              </div>
+            </div>
+            <div className="f-elements f-elements--center">
+              <select>
+                <option value="value1">🌑</option>
+                <option value="value2">🌞</option>
+                <option value="value3">💻</option>
+              </select>
+              <button className="icon">🍔</button>
             </div>
           </div>
         </nav>

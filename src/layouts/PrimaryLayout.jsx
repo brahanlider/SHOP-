@@ -6,7 +6,7 @@ const PrimaryLayout = () => {
     <>
       <Header />
       <main>
-        {/* renderiza acorde a la ruta donde estan */}
+        {/* Outlet=renderiza acorde a la ruta donde estan */}
         <Outlet />
       </main>
     </>

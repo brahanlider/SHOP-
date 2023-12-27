@@ -7,6 +7,7 @@ export const primaryRoute = createBrowserRouter([
   {
     path: "/",
     element: <PrimaryLayout />,
+    errorElement:<h1>Error page 404</h1>,
     children: [
       {
         // renderia primero el HOME
